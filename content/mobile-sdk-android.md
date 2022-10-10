@@ -38,7 +38,7 @@ The following list shows the device fingerprinting attribute categories that we 
 - **Potential Label** – This group of attributes is used for model supervision and labeling purposes. There is a probability that each of these attributes, by itself, won't provide ground truth. However, the combination of these attributes increases the likelihood that the label that is used to train Fraud Protection's model will become ground truth and helps improve model performance.
 
 ## Android technical reference
-
+![Cocoapods](https://img.shields.io/cocoapods/v/FraudProtection?label=Latest%20Version&style=for-the-badge)
 1. Add the JitPack repository to your root build.gradle.
 
     ```gradle
@@ -54,7 +54,7 @@ The following list shows the device fingerprinting attribute categories that we 
 
     ```gradle
     dependencies {
-        implementation ('com.github.microsoft:fraudprotection-sdk-android:2.0.2@aar'){
+        implementation ('com.github.microsoft:fraudprotection-sdk-android:$version$@aar'){
             transitive = true
         }
     }
